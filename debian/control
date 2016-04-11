@@ -1,0 +1,12 @@
+Source: ros-indigo-rqt-ez-publisher
+Section: misc
+Priority: extra
+Maintainer: Takashi Ogura <t.ogura@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python-catkin-pkg, ros-indigo-catkin, ros-indigo-rostest, ros-indigo-sensor-msgs
+Homepage: http://wiki.ros.org/rqt_ez_publisher
+Standards-Version: 3.9.2
+
+Package: ros-indigo-rqt-ez-publisher
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-geometry-msgs, ros-indigo-rospy, ros-indigo-rqt-gui, ros-indigo-rqt-gui-py, ros-indigo-rqt-py-common, ros-indigo-tf, ros-indigo-tf2-msgs
+Description: The rqt_ez_publisher package
