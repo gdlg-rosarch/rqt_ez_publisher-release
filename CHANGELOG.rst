@@ -2,6 +2,12 @@
 Changelog for package rqt_ez_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.1 (2016-04-11)
+------------------
+* Fix save/load dialog
+* Search from deeper topic name
+* Contributors: Takashi Ogura
+
 0.3.0 (2014-08-25)
 ------------------
 * Add save/load button in config dialog
