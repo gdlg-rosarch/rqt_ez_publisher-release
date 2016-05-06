@@ -107,12 +107,11 @@ def find_topic_name(full_text, topic_dict):
     topic_name = full_text
     topic_inside_variable_list = []
     while topic_name not in topic_dict and splited_text:
-        topic_name = topic_name.rstrip('/'.join(splited_text[-1]))
+        topic_name = '/' + '/'.join(splited_text[:-1])
         topic_inside_variable_list.append(splited_text[-1])
         splited_text = splited_text[:-1]
-
     topic_inside_variable_list.reverse()
-    if topic_name != '' and topic_inside_variable_list:
+    if topic_name != '/' and topic_inside_variable_list:
         m = re.search('(\w+)\[([0-9]+)\]', topic_inside_variable_list[-1])
         if m:
             topic_inside_variable_list[-1] = m.group(1)
@@ -133,17 +132,18 @@ def get_value_type(topic_type_str, attributes, modules=[]):
         _, spec = roslib.msgs.load_by_type(topic_type_str)
     except roslib.msgs.MsgSpecException:
         return (None, False)
-    except IOError as e: # not found
+    except IOError as e:  # not found
         # for devel environment
         import os
         cmake_prefix_list = os.environ.get('CMAKE_PREFIX_PATH')
         if cmake_prefix_list is not None:
             package, msg = topic_type_str.split('/')
             for path in cmake_prefix_list.split(':'):
-                msg_path = "%s/share/%s/msg/%s.msg"%(path, package, msg)
+                msg_path = "%s/share/%s/msg/%s.msg" % (path, package, msg)
                 if os.path.exists(msg_path):
                     _, spec = roslib.msgs.load_from_file(msg_path, package)
-                    rospy.logdebug('loaded %s/%s for devel environment'%(package, msg))
+                    rospy.logdebug(
+                        'loaded %s/%s for devel environment' % (package, msg))
                     break
     try:
         head_attribute = attributes[0].split('[')[0]
