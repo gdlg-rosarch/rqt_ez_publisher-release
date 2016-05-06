@@ -1,3 +1,26 @@
+## rqt_ez_publisher (jade) - 0.3.2-0
+
+The packages in the `rqt_ez_publisher` repository were released into the `jade` distro by running `/usr/bin/bloom-release rqt_ez_publisher --track jade --rosdistro jade` on `Fri, 06 May 2016 08:11:33 -0000`
+
+The `rqt_ez_publisher` package was released.
+
+Version of package(s) in repository `rqt_ez_publisher`:
+
+- upstream repository: https://github.com/OTL/rqt_ez_publisher.git
+- release repository: https://github.com/OTL/rqt_ez_publisher-release.git
+- rosdistro version: `0.3.1-0`
+- old version: `0.3.1-0`
+- new version: `0.3.2-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## rqt_ez_publisher (jade) - 0.3.1-0
 
 The packages in the `rqt_ez_publisher` repository were released into the `jade` distro by running `/usr/bin/bloom-release rqt_ez_publisher --track jade --rosdistro jade` on `Mon, 11 Apr 2016 15:02:37 -0000`
