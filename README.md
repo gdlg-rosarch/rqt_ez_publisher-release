@@ -1,3 +1,26 @@
+## rqt_ez_publisher (kinetic) - 0.4.0-0
+
+The packages in the `rqt_ez_publisher` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release rqt_ez_publisher --track kinetic --rosdistro kinetic` on `Wed, 26 Oct 2016 09:52:28 -0000`
+
+The `rqt_ez_publisher` package was released.
+
+Version of package(s) in repository `rqt_ez_publisher`:
+
+- upstream repository: https://github.com/OTL/rqt_ez_publisher.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.4.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## rqt_ez_publisher (indigo) - 0.3.2-0
 
 The packages in the `rqt_ez_publisher` repository were released into the `indigo` distro by running `/usr/bin/bloom-release rqt_ez_publisher --track indigo --rosdistro indigo` on `Fri, 06 May 2016 09:00:08 -0000`
