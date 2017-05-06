@@ -1,0 +1,12 @@
+Source: ros-lunar-rqt-ez-publisher
+Section: misc
+Priority: extra
+Maintainer: Takashi Ogura <t.ogura@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python-catkin-pkg, ros-lunar-catkin, ros-lunar-rostest, ros-lunar-sensor-msgs
+Homepage: http://wiki.ros.org/rqt_ez_publisher
+Standards-Version: 3.9.2
+
+Package: ros-lunar-rqt-ez-publisher
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-geometry-msgs, ros-lunar-rospy, ros-lunar-rqt-gui, ros-lunar-rqt-gui-py, ros-lunar-rqt-py-common, ros-lunar-tf, ros-lunar-tf2-msgs
+Description: The rqt_ez_publisher package
